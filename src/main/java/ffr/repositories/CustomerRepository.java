@@ -1,10 +1,9 @@
 package ffr.repositories;
 
+import ffr.entities.Customer;
 import org.springframework.data.repository.CrudRepository;
 
-import ffr.entities.Customer;
-
 public interface CustomerRepository extends CrudRepository<Customer, Long> {
-	Customer findByFirstName(String firstName);
+    Customer findByFirstName(String firstName);
 
 }

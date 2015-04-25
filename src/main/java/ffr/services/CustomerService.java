@@ -1,17 +1,17 @@
 package ffr.services;
 
-import java.util.Collection;
-
 import ffr.entities.Customer;
+
+import java.util.Collection;
 
 public interface CustomerService {
 
-	Collection<Customer> getAllCustomers();
+    Collection<Customer> getAllCustomers();
 
-	Customer getCustomerById(Long id);
+    Customer getCustomerById(Long id);
 
-	Customer getCustomerByFirstName(String firstName);
+    Customer getCustomerByFirstName(String firstName);
 
-	void createCustomer(Customer personne);
+    void createCustomer(Customer personne);
 
 }
