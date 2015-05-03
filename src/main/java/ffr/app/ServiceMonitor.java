@@ -21,7 +21,7 @@ public class ServiceMonitor {
     private long begin;
     private long end;
 
-    @Before("execution(* services..*Service.*(..))")
+    @Before("execution(* ffr.services..*Service.*(..))")
     public void logServicBeforeAccess(JoinPoint joinPoint) {
 
         if (log.isDebugEnabled()) {
@@ -53,7 +53,7 @@ public class ServiceMonitor {
         begin = System.currentTimeMillis();
     }
 
-    @After("execution(* services..*Service.*(..))")
+    @After("execution(* ffr.services..*Service.*(..))")
     public void logServiceAfterAccess(JoinPoint joinPoint) {
         end = System.currentTimeMillis();
         log.info(joinPoint + " (" + (end - begin) + "ms)");
