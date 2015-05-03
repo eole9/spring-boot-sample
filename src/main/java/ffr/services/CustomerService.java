@@ -12,6 +12,6 @@ public interface CustomerService {
 
     Customer getCustomerByFirstName(String firstName);
 
-    void createCustomer(Customer personne);
+    Customer createCustomer(Customer personne);
 
 }

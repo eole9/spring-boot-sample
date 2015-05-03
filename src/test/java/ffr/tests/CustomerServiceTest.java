@@ -19,14 +19,20 @@ public class CustomerServiceTest {
     private CustomerService customerService;
 
     @Test
-    public void test1() {
+    public void test() {
+        Customer customer;
 
         // Add customer
-        customerService.createCustomer(new Customer("Julien", "Lepers"));
+        customer = customerService.createCustomer(new Customer("Julien", "Lepers"));
 
         // Display customers
         Collection<Customer> customers = customerService.getAllCustomers();
-        display("Customers: ", customers);
+        display("Customers:", customers);
+
+        // Display one customer
+        customer = customerService.getCustomerById(customer.getId());
+        System.out.println("Customer:");
+        System.out.println(customer);
     }
 
     /**
