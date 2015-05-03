@@ -13,7 +13,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableAutoConfiguration(exclude = {WebInitializer.class})
-@ComponentScan(basePackages = {"ffr.services", "ffr.controllers", "ffr.security"})
+@ComponentScan(basePackages = {"ffr.app", "ffr.services", "ffr.controllers", "ffr.security"})
 @EnableJpaRepositories(basePackages = {"ffr.repositories"})
 @EntityScan(basePackages = {"ffr.entities"})
 @EnableTransactionManagement
