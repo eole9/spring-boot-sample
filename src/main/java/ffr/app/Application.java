@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-// FFR v4
+// FFR v5
 
 @Configuration
 @EnableAutoConfiguration(exclude = { WebInitializer.class })
